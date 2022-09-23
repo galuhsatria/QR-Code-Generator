@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 60vh;
 }
 header {
   align-items: center;
@@ -49,16 +49,30 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
   border-radius: 5px;
   margin-top: 16px;
   pointer-events: none;
 }
-
+.qr-img a {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+}
 .qr-img img {
   width: 200px;
 }
-
+.wrapper.active {
+  margin-top: 40px;
+}
+.wrapper.active .qr-img a {
+  display: block;
+}
 .wrapper.active .qr-img {
   opacity: 1;
   pointer-events: auto;
